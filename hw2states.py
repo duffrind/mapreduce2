@@ -1,13 +1,19 @@
 from mrjob.job import MRJob
 
-class prob1(MRJob): # total number of words
+class prob1(MRJob): # smallest, largest, and averagest population
     def mapper(self, _, line):
-        #yield "chars", len(line)
-        yield "words", len(line.split())
-        #yield "lines", 1
+        try:
+            population = int(line.split(',')[-1])
+            yield 'state', population
+        except:
+            pass
     def reducer(self, key, values):
-        yield key, sum(values)
+        v = list(values)
+        yield 'smallest', min(v)
+        yield 'largest', max(v)
+        yield 'averagest', sum(v)/len(v)
 
+'''
 class prob2(MRJob): # count "the"
     def mapper(self, _, line):
         for word in line.split():
@@ -45,12 +51,12 @@ class prob6(MRJob): # average number of vowels for each word length
     def reducer(self, key, values):
         v = list(values)
         yield key, sum(v)/len(v)
-
+'''
 
 if __name__ == '__main__':
     prob1.run()
-    prob2.run()
-    prob3.run()
-    prob4.run()
-    prob5.run()
-    prob6.run()
+    #prob2.run()
+    #prob3.run()
+    #prob4.run()
+    #prob5.run()
+    #prob6.run()
