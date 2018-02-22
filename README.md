@@ -3,9 +3,9 @@
 
 To run:
 
-`python prob1.py files > output1.txt`
+`python prob1.py states.csv > output1.txt`
 
-`python prob2.py files > output2.txt`
+`python prob2.py electricity.csv > output2.txt`
 
 `python prob3.py files > output3.txt`
 
@@ -15,10 +15,7 @@ To run:
 
 `python prob6.py files > output6.txt`
 
-
-
-
-1. Calculate the largest, smallest, and average (mean) population for a state.
+1. Calculate the largest, smallest, and average (mean) population for the states.
 
 2. Calculate the variance in electricity prices among the states.
 
