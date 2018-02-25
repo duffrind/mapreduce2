@@ -1,5 +1,6 @@
 # mapreduce2
- Homework 2 for Distributed Computing (Python + MrJob)
+
+Homework 2 for Distributed Computing (Python + MrJob)
 
 To run:
 
@@ -7,19 +8,20 @@ To run:
 
 `python prob2.py electricity.csv > output2.txt`
 
-`python prob3.py files > output3.txt`
+`python prob3.py states.csv > output3.txt`
 
-`python prob4.py files > output4.txt`
+`python prob4.py electricity.csv states.csv > output4.txt`
 
-`python prob5.py files > output5.txt`
+`python prob5.py colleges.csv > output5.txt`
 
-`python prob6.py files > output6.txt`
+`python prob6.py colleges.csv > output6.txt`
 
 1. Calculate the largest, smallest, and average (mean) population for the states.
 
 2. Calculate the variance in electricity prices among the states.
 
-3. Use linear regression to fit the following simple modelPopulation = Area * <alpha> + <beta>
+3. Use linear regression to fit the following simple model
+Population = Area * <alpha> + <beta>
 That is, find <alpha> and <beta> that minimize the squared residuals when the state data is represented using this model
 
 4. Which of the following linear models is a better fit for the electricity data

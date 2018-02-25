@@ -1,9 +1,11 @@
 from mrjob.job import MRJob
 
-class prob(MRJob): # smallest, largest, and averagest population
+class prob(MRJob): # Normal Equation
     def mapper(self, _, line):
         try:
-            population = int(line.split(',')[-1])
+            values = line.split(',')
+            pop = int(values[-1])
+            area = int(values[])
             yield 'state', population
         except:
             pass
