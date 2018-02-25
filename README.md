@@ -34,3 +34,11 @@ Electricity Price = Population * <alpha> + <beta>
 6. Obtain a random sample of approximately 100 colleges, in which:
 Each public college is equally likely to be sampled and each private college is equally likely to be sampled.
 The sample is weighted so that in expectation there are the same number of public and private colleges in the sample
+
+This assignment uses three data files.
+
+States : Name, Abbreviation, Area (Sq. Miles), Population
+
+Electricity : State, Price per Kilowatt Hour
+
+Colleges: This file has a description of each field in the first line of the file
