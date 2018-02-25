@@ -20,7 +20,7 @@ class normalequation(MRJob):
                     name = values[0]
                     price = float(values[1])
                     yield name, dict([('price', price)])
-            else: #states (name, _, _, area, population)
+            else: # states (name, _, _, area, population)
                 if values[0] != '' and values[0] != 'United States' and values[3] != '' and values[4] != '':
                     name = values[0]
                     area = int(values[3])
