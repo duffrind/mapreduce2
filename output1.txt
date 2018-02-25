@@ -1,0 +1,3 @@
+"smallest"	453588
+"largest"	248691873
+"averagest"	9565245.115384616
